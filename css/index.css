@@ -1,0 +1,436 @@
+@charset "UTF-8";
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url("../fonts/MiFie-Web-Font.eot");
+  src: url("../fonts/MiFie-Web-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/MiFie-Web-Font.woff") format("woff"), url("../fonts/MiFie-Web-Font.ttf") format("truetype"), url("../fonts/MiFie-Web-Font.svg") format("svg");
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.wjsfont-logo::before {
+  content: '\e920';
+}
+
+.wjsfont-name::before {
+  content: '\e921';
+}
+
+.wjsfont-e903::before {
+  content: '\e903';
+}
+
+.wjsfont-e901::before {
+  content: '\e901';
+}
+
+.wjsfont-e904::before {
+  content: '\e904';
+}
+
+.wjsfont-e905::before {
+  content: '\e905';
+}
+
+.wjsfont-e902::before {
+  content: '\e902';
+}
+
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+
+.wjsfont-new03::before {
+  content: "\e910";
+}
+
+.wjsfont-new04::before {
+  content: "\e911";
+}
+
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-header .row > div {
+  border: 1px solid #666;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.my-header .row > div a {
+  color: #666;
+  font-size: 12px;
+}
+.my-header .row > div:first-child a {
+  position: relative;
+}
+.my-header .row > div:first-child a img {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: -17px;
+  z-index: 2;
+}
+.my-header .row > div:first-child a:hover img {
+  display: block;
+}
+
+#my-nav .navbar-toggle {
+  margin-top: 23px;
+  margin-right: 0px;
+}
+#my-nav .container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#my-nav .container-fluid a {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+#my-nav .container-fluid a:not(.navbar-brand):hover {
+  border-bottom: 4px solid red;
+}
+#my-nav .container-fluid a.navbar-brand span {
+  font-size: 60px;
+  line-height: 80px;
+}
+#my-nav .container-fluid a.navbar-brand span:first-child {
+  color: red;
+}
+#my-nav .container-fluid a.navbar-brand span:last-child {
+  color: #000;
+}
+
+.my-carousel .carousel-inner .item a {
+  width: 100%;
+  display: block;
+}
+.my-carousel .carousel-inner .item img {
+  width: 100%;
+  display: block;
+}
+.my-carousel .carousel-inner .item a.bg-img-a {
+  height: 410px;
+  background: url("../images/slide_01_2000x410.jpg") no-repeat center center;
+}
+.my-carousel .carousel-inner .item a.bg-img-b {
+  height: 410px;
+  background: url("../images/slide_02_2000x410.jpg") no-repeat center center;
+}
+.my-carousel .carousel-inner .item a.bg-img-c {
+  height: 410px;
+  background: url("../images/slide_03_2000x410.jpg") no-repeat center center;
+}
+.my-carousel .carousel-inner .item a.bg-img-d {
+  height: 410px;
+  background: url("../images/slide_04_2000x410.jpg") no-repeat center center;
+}
+
+.my-service {
+  max-width: 970px;
+  padding: 50px 0;
+}
+.my-service a {
+  display: block;
+  color: #666;
+  padding: 5px 0;
+}
+.my-service a span {
+  font-size: 40px;
+}
+.my-service a:hover {
+  color: red;
+}
+
+.book-c {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.book-c .book {
+  max-width: 970px;
+  padding: 10px 0;
+}
+.book-c .book .row p {
+  line-height: 30px;
+}
+.book-c .book .row .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+  text-decoration: none;
+}
+.book-c .book .row .pull-right a {
+  color: #666;
+}
+.book-c .book .row .pull-right a:hover {
+  color: red;
+}
+
+#my-tabs li.active a {
+  border: none;
+  color: red;
+}
+#my-tabs li {
+  margin-bottom: 0;
+}
+#my-tabs li a {
+  color: #666;
+  border: none;
+}
+#my-tabs li a:hover {
+  background: transparent;
+}
+#my-tabs .tab-content {
+  padding-top: 15px;
+}
+#my-tabs .tab-content .row .col-md-4 {
+  margin-bottom: 20px;
+}
+#my-tabs .tab-content .row .content-box {
+  display: flex;
+  height: 150px;
+  text-decoration: none;
+  color: gray;
+  box-shadow: 5px 5px 5px #666;
+}
+#my-tabs .tab-content .row .content-box .left {
+  flex: 1;
+}
+#my-tabs .tab-content .row .content-box .left h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+#my-tabs .tab-content .row .content-box .left .left-content {
+  display: flex;
+  justify-content: space-between;
+}
+#my-tabs .tab-content .row .content-box .left .left-content p {
+  text-align: left;
+  margin: 5px 10px;
+}
+#my-tabs .tab-content .row .content-box .left .left-content .content-right p {
+  text-align: right;
+}
+#my-tabs .tab-content .row .content-box .left .left-content .content-right .progress {
+  width: 100px;
+  margin: 0 10px 0 0;
+}
+#my-tabs .tab-content .row .content-box .right {
+  width: 76px;
+  border-left: 1px dashed #666;
+  padding-top: 15px;
+  position: relative;
+}
+#my-tabs .tab-content .row .content-box .right::before,
+#my-tabs .tab-content .row .content-box .right::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+}
+#my-tabs .tab-content .row .content-box .right::before {
+  top: -10px;
+  border-bottom: 1px solid #000;
+}
+#my-tabs .tab-content .row .content-box .right::after {
+  bottom: -10px;
+  border-top: 1px solid #000;
+}
+#my-tabs .tab-content .row .content-box p {
+  text-align: center;
+  font-weight: 900;
+  line-height: 20px;
+}
+#my-tabs .tab-content .row .content-box .baby {
+  text-align: center;
+  position: relative;
+}
+#my-tabs .tab-content .row .content-box .baby span {
+  padding: 0 2px;
+  font-weight: 700;
+  position: absolute;
+  top: 20px;
+}
+#my-tabs .tab-content .row .content-box .baby span:first-child {
+  color: #32cd32;
+  border: 1px solid #32cd32;
+  right: 42px;
+}
+#my-tabs .tab-content .row .content-box .baby span:nth-of-type(2) {
+  color: red;
+  border: 1px solid red;
+  left: 42px;
+}
+#my-tabs .tab-content .row .content-box .baby p:first-of-type {
+  padding-top: 36px;
+}
+#my-tabs .tab-content .row .content-box .baby p:first-of-type::first-letter {
+  font-size: 30px;
+}
+#my-tabs .tab-content .row .red {
+  background: red;
+  color: #fff;
+}
+#my-tabs .tab-content .row .red .right {
+  border-left: 1px dashed #fff;
+}
+#my-tabs .tab-content .row .red::before {
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+}
+
+#news {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#news .row h2 {
+  font-size: 26px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  position: relative;
+}
+#news .row h2::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: -9px;
+}
+#news .row .nav-tabs {
+  border: none;
+  padding: 0;
+}
+#news .row .nav-tabs li {
+  margin-bottom: 50px;
+  padding: 0;
+  position: relative;
+}
+#news .row .nav-tabs li a.wjsfont {
+  border: none;
+  font-size: 50px;
+  background: #ccc;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+  padding: 0;
+}
+#news .row .nav-tabs li a.wjsfont:hover {
+  background: red;
+}
+#news .row .nav-tabs li span.line {
+  display: block;
+  position: absolute;
+  left: 33px;
+  top: 70px;
+  height: 50px;
+  border-left: 1px dashed #000;
+}
+#news .row .nav-tabs li.active a {
+  background: red;
+  border: none;
+}
+#news .row .nav-tabs li:last-child {
+  margin-bottom: 5px;
+}
+#news .row .tab-content ul li {
+  padding: 13px 0;
+}
+#news .row .tab-content ul li a {
+  color: #666;
+}
+#news .row .tab-content ul li:first-child {
+  padding-top: 30px;
+}
+
+.partner {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+}
+.partner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner ul li {
+  min-width: 120px;
+  font-size: 100px;
+}
+.partner ul li a {
+  color: #808080;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

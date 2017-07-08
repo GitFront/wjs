@@ -1,0 +1,347 @@
+    @import "base.scss";
+     // 头部
+    .my-header {
+        .row>div {
+            border: 1px solid #666;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .row>div a {
+            color: #666;
+            font-size: 12px;
+        }
+        .row>div:first-child a {
+            position: relative;
+        }
+        .row>div:first-child a img {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: -17px;
+            z-index: 2;
+        }
+        .row>div:first-child a:hover img {
+            display: block;
+        }
+    } // 导航
+    #my-nav {
+        .navbar-toggle {
+            margin-top: 23px;
+            margin-right: 0px;
+        }
+        .container-fluid {
+            padding-left: 50px;
+            padding-right: 50px;
+            a {
+                height: 80px;
+                line-height: 80px;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+            a:not(.navbar-brand):hover {
+                border-bottom: 4px solid red;
+            }
+            a.navbar-brand span {
+                font-size: 60px;
+                line-height: 80px;
+                &:first-child {
+                    color: red;
+                }
+                &:last-child {
+                    color: #000;
+                    ;
+                }
+            }
+        }
+    } // 轮播图
+    .my-carousel {
+        .carousel-inner {
+            .item {
+                a {
+                    width: 100%;
+                    display: block;
+                }
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                a.bg-img-a {
+                    height: 410px;
+                    background: url("../images/slide_01_2000x410.jpg")no-repeat center center;
+                }
+                a.bg-img-b {
+                    height: 410px;
+                    background: url("../images/slide_02_2000x410.jpg")no-repeat center center;
+                }
+                a.bg-img-c {
+                    height: 410px;
+                    background: url("../images/slide_03_2000x410.jpg")no-repeat center center;
+                }
+                a.bg-img-d {
+                    height: 410px;
+                    background: url("../images/slide_04_2000x410.jpg")no-repeat center center;
+                }
+            }
+        }
+    } // 服务
+    .my-service {
+        max-width: 970px;
+        padding: 50px 0;
+        a {
+            display: block;
+            color: #666;
+            padding: 5px 0;
+            span {
+                font-size: 40px;
+            }
+        }
+        a:hover {
+            color: red;
+        }
+    } // 预定
+    .book-c {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        .book {
+            max-width: 970px;
+            padding: 10px 0;
+            .row {
+                p {
+                    line-height: 30px;
+                }
+                .pull-left a {
+                    color: red;
+                    border-bottom: 1px dashed red;
+                    text-decoration: none;
+                }
+                .pull-right a {
+                    color: #666;
+                }
+                .pull-right a:hover {
+                    color: red;
+                }
+            }
+        }
+    } //推荐
+    #my-tabs {
+        li.active a {
+            border: none;
+            color: red;
+        }
+        li {
+            margin-bottom: 0;
+            a {
+                color: #666;
+                border: none;
+            }
+        }
+        li a:hover {
+            background: transparent;
+        }
+        .tab-content {
+            padding-top: 15px;
+            .row {
+                .col-md-4 {
+                    margin-bottom: 20px;
+                }
+                .content-box {
+                    display: flex;
+                    height: 150px;
+                    text-decoration: none;
+                    color: gray;
+                    box-shadow: 5px 5px 5px #666;
+                    .left {
+                        flex: 1;
+                        h2 {
+                            text-align: center;
+                            font-size: 18px;
+                            margin-bottom: 4px;
+                            margin-top: 10px;
+                        }
+                        .left-content {
+                            display: flex;
+                            justify-content: space-between;
+                            p {
+                                text-align: left;
+                                margin: 5px 10px;
+                            }
+                            .content-right {
+                                p {
+                                    text-align: right;
+                                }
+                                .progress {
+                                    width: 100px;
+                                    margin: 0 10px 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        width: 76px;
+                        border-left: 1px dashed #666;
+                        padding-top: 15px;
+                        position: relative;
+                    }
+                    .right::before,
+                    .right::after {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background: #fff;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: -10px;
+                    }
+                    .right::before {
+                        top: -10px;
+                        border-bottom: 1px solid #000;
+                    }
+                    .right::after {
+                        bottom: -10px;
+                        border-top: 1px solid #000;
+                    }
+                    p {
+                        text-align: center;
+                        font-weight: 900;
+                        line-height: 20px;
+                    }
+                    .baby {
+                        text-align: center;
+                        position: relative;
+                        span {
+                            padding: 0 2px;
+                            font-weight: 700;
+                            position: absolute;
+                            top: 20px;
+                            &:first-child {
+                                color: #32cd32;
+                                border: 1px solid #32cd32;
+                                right: 42px;
+                            }
+                            &:nth-of-type(2) {
+                                color: red;
+                                border: 1px solid red;
+                                left: 42px;
+                            }
+                        }
+                        p:first-of-type {
+                            padding-top: 36px;
+                            &::first-letter {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .red {
+                    background: red;
+                    color: #fff;
+                    .right {
+                        border-left: 1px dashed #fff;
+                    }
+                }
+                .red::before {
+                    font-size: 40px;
+                    position: absolute;
+                    left: 0;
+                   
+                }
+            }
+        }
+    } // news
+    #news {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        .row {
+            h2 {
+                font-size: 26px;
+                text-align: center;
+                border-bottom: 1px solid #000;
+                padding-bottom: 10px;
+                position: relative;
+            }
+            h2::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: 1px solid #000;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -5px;
+                right: -9px;
+            }
+            .nav-tabs {
+                border: none;
+                padding: 0;
+                li {
+                    margin-bottom: 50px;
+                    padding: 0;
+                    position: relative;
+                    a.wjsfont {
+                        border: none;
+                        font-size: 50px;
+                        background: #ccc;
+                        color: #fff;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        line-height: 70px;
+                        text-align: center;
+                        padding: 0;
+                        &:hover {
+                            background: red;
+                        }
+                    }
+                    span.line {
+                        display: block;
+                        position: absolute;
+                        left: 33px;
+                        top: 70px;
+                        height: 50px;
+                        border-left: 1px dashed #000;
+                    }
+                }
+                li.active a {
+                    background: red;
+                    border: none;
+                }
+                li:last-child {
+                    margin-bottom: 5px;
+                }
+            }
+            .tab-content {
+                ul {
+                    li {
+                        padding: 13px 0;
+                        a {
+                            color: #666;
+                        }
+                        &:first-child {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    } // 底部
+    .partner {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        ul {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;;
+            li {
+             
+              min-width: 120px;
+                font-size: 100px;
+                a {
+                    color: #808080;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
